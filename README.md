@@ -16,3 +16,6 @@ _Calculadora de Numerología:_
 _Perfil de Usuario Personalizado:_
 
 * El usuario podrá crear y gestionar su perfil de usuario para un acceso rápido y personalizado a su información astrológica y numerológica.
+
+maquetación en figma:
+https://www.figma.com/design/wP90ocjttlzkCcEUe9No6d/Astroly-website?node-id=1-2&t=xZSr8RZQ3wfIB7DA-1
