@@ -1,0 +1,96 @@
+:root{
+    --fondo: #494959;
+    --color1: #5D5166;
+    --color2: #CEB7E0;
+    --color3: #E8DBF2;
+    --color4: #FDEFF2;
+    --color5: #EBF0FC;
+    --gris: #918C97;
+    --grisOscuro: #2C2C2E;
+    --negro: #000000;
+    font-family: "Montserrat","Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/**************************************************/
+*{
+    background-color: var(--color1);
+}
+
+h1{
+    text-align: center;
+}
+
+/**************************************************/
+/* barra de navegación */
+.navbar{
+    align-items:center;
+    justify-items: center;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li {
+    margin-right: 20px; 
+}
+.navbar ul li a {
+    text-decoration: none; 
+    color: var(--color5); 
+    text-decoration-style: solid;
+}
+/**************************************************/
+/* section */
+section{
+    margin: 50px;
+    align-items:center;
+    justify-items: center;
+}
+section p{
+    text-align:justify;  
+    text-justify:inter-word;
+    margin: 10px;
+}
+section ul li{
+    margin-top: 5px;
+}
+
+/**************************************************/
+/* cards */
+main{
+    align-items:center;
+    justify-items: center; 
+    display:flex;
+}
+main p{
+    text-align: center;
+    background:none;
+}
+main img{
+    color: var(--negro);
+}
+.card{
+    width: 350px;
+    height: 200px;
+    margin: 25px;
+    background-color: var(--color3);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**************************************************/
+/* footer */
+footer p{
+    text-align: center;
+    margin: 10px;
+}
+.iconos{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+   
+}
