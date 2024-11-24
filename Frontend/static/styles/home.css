@@ -1,6 +1,6 @@
 :root{
     --fondo: #494959;
-    --color1: #5D5166;
+    --color1: #867395;
     --color2: #CEB7E0;
     --color3: #E8DBF2;
     --color4: #FDEFF2;
@@ -8,7 +8,7 @@
     --gris: #918C97;
     --grisOscuro: #2C2C2E;
     --negro: #000000;
-    font-family: "Montserrat","Bebas Neue", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -16,9 +16,31 @@
 *{
     background-color: var(--color1);
 }
-
 h1{
     text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    background-color: var(--color2);
+    margin: auto;
+    padding: 15px;
+    color: var(--color1);
+    letter-spacing: 5px;
+}
+h2{
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+}
+#texto{
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 5px;
+}
+header{
+    background-color: var(--color2);
+    height: 15vh;
+    margin: auto;
 }
 
 /**************************************************/
@@ -26,71 +48,119 @@ h1{
 .navbar{
     align-items:center;
     justify-items: center;
+    background: none;
 }
 .navbar ul{
     list-style-type: none;
     display: flex;
     margin: 0;
     padding: 0;
+    background:none;
 }
 .navbar ul li {
-    margin-right: 20px; 
+    margin-right: 25px; 
+    background:none;
+    margin-top: 10px;
 }
 .navbar ul li a {
     text-decoration: none; 
-    color: var(--color5); 
+    color: var(--negro); 
     text-decoration-style: solid;
+    background:none;
+    font-weight: 550;
+    font-size: 18px;
 }
 /**************************************************/
 /* section */
 section{
-    margin: 50px;
+    margin-top: 30px;
     align-items:center;
-    justify-items: center;
+    justify-items: center; 
+    padding: 8px;
 }
 section p{
     text-align:justify;  
-    text-justify:inter-word;
     margin: 10px;
 }
 section ul li{
-    margin-top: 5px;
+    margin: 10px;
+    font-size: 18px;
+    display: flex;
 }
 
 /**************************************************/
 /* cards */
 main{
-    align-items:center;
-    justify-items: center; 
-    display:flex;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px;
+    margin: 15px;
 }
-main p{
-    text-align: center;
-    background:none;
-}
-main img{
-    color: var(--negro);
-}
-.card{
+.card {
     width: 350px;
-    height: 200px;
+    height: 250px;
     margin: 25px;
     background-color: var(--color3);
+    background-image: url("../img/zodiac1.png");
+    background-size: cover;
+    background-position: center;
     border-radius: 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 55px;
+    transition: box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    opacity: 0.9;
+    }
+    
+.card p.textA {
+    text-align: center;
+    background: none;
+    color: var(--color1);
+    background-color: #E8DBF2;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    padding: 6px;
+    border-radius: 25px;
+    box-shadow: var(--color1)(0, 0, 0, 0.25) 5px 20px 55px;
+    margin: 5px; 
 }
-
+    
+.card img {
+    color: var(--color2);
+    background: none;
+    width: 50px; 
+    height: auto;
+    margin-top: 10px; 
+}
 /**************************************************/
 /* footer */
 footer p{
     text-align: center;
     margin: 10px;
+    background:none;
 }
 .iconos{
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-   
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    background:none;
+}
+footer{
+    text-align: center;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 15vh;
+}
+#img-redes{
+    display: inline-block;
+    margin: 10px auto;
+    background:none;
 }
