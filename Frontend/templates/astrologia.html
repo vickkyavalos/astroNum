@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-------------------------------------------------->
+    <link rel="stylesheet" href="./../static/styles/astrologia.css">
+    <title>Astrología</title>
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <div id="logo-container">
+            <img id="logo" src="../static/img/logoASTRONUM.png" alt=""> 
+        </div>
+        <h1>AstroNum</h1>
+        <!-- <img src="/static/img/icons/person-fill.svg" alt=""> -->
+        
+        <!-- barra de navegación -->
+        <div class="navbar">
+            <ul>
+                <li><a href="./home.html">Inicio</a></li>
+                <li><a href="./astrologia.html">Astrología</a></li>
+                <li><a href="./numerologia.html">Numerología</a></li>
+                <li><a href="">Recursos</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+        </div>
+    </header>
+    <br>
+
+    <!-- formulario -->
+    <main>
+        <div class="container">
+       <div class="card">
+        <form action=""></form>
+            <p class="textF">Carta Natal</p>
+            <br>
+            <form>
+                <label for="fname">Nombre/s: </label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <!------------------------------------------->
+                <label for="apellido">Apellido/s: </label><br>
+                <input type="text" id="apellido" name="apellido"><br>
+                <!------------------------------------------->
+                <label for="Fecha">Fecha de nacimiento: </label><br>
+                <input type="date" name="fecha" id="fecha"><br>
+                <!------------------------------------------->
+                <label for="hora">Hora de nacimiento</label><br>
+                <input type="datetime" name="hora" id="hora">
+                <!------------------------------------------->
+                <button>Calcular</button>
+
+              </form>
+        </div>
+        <div class="texto-info">
+            <p>La carta natal es una representación gráfica del cielo en el momento exacto de tu nacimiento. Sirve como una herramienta para explorar aspectos de tu personalidad, tus talentos, desafíos y el propósito de tu vida. Al interpretar la posición de los planetas, signos zodiacales y casas astrológicas, se pueden obtener pistas sobre tus emociones, relaciones, carrera y crecimiento personal. Es un mapa simbólico que ayuda a conocerte mejor y a tomar decisiones más alineadas con tu esencia.</p>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <p>© 2024 AstroNum. Todos los derechos reservados.</p>
+        <div id="img-redes">
+            <img class="iconos" src="./../static/img/icons/facebook.svg" alt="iconos">
+            <img class="iconos" src="./../static/img/icons/instagram.svg" alt="iconos">
+            <img class="iconos" src="./../static/img/icons/twitter-x.svg" alt="iconos">
+        </div>
+    </footer>
+    
+</body>
+</html>

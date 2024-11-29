@@ -5,6 +5,7 @@
     --color3: #E8DBF2;
     --color4: #FDEFF2;
     --color5: #EBF0FC;
+    --color6: #CC9ED6;
     --gris: #918C97;
     --grisOscuro: #2C2C2E;
     --negro: #000000;
@@ -12,7 +13,7 @@
     font-weight: 400;
     font-style: normal;
 }
-/**************************************************/
+
 *{
     background-color: var(--color1);
 }
@@ -55,8 +56,10 @@ header{
     margin-top: 10px;
     background: none;
 }
+
 /**************************************************/
 /* barra de navegación */
+
 .navbar{
     align-items:center;
     justify-items: center;
@@ -82,26 +85,9 @@ header{
     font-weight: 550;
     font-size: 18px;
 }
-/**************************************************/
-/* section */
-section{
-    margin-top: 30px;
-    align-items:center;
-    justify-items: center; 
-    padding: 8px;
-}
-section p{
-    text-align:justify;  
-    margin: 10px;
-}
-section ul li{
-    margin: 10px;
-    font-size: 18px;
-    display: flex;
-}
 
-/**************************************************/
-/* cards */
+/***************************************************/
+/* formulario */
 main{
     display: flex;
     flex-wrap: wrap; 
@@ -110,12 +96,21 @@ main{
     padding: 10px;
     margin: 15px;
 }
+.container{
+    display: flex;
+}
+.texto-info{
+    width: 500px;
+    text-align: center;
+    margin-bottom: 180px;
+    margin-top: 180px;
+    font-size: 18px;
+}
 .card {
-    width: 350px;
-    height: 250px;
+    width: 360px;
+    height: 520px;
     margin: 25px;
     background-color: var(--color3);
-    background-image: url("../img/zodiac1.png");
     background-size: cover;
     background-position: center;
     border-radius: 40px;
@@ -128,29 +123,51 @@ main{
     overflow: hidden;
     opacity: 0.9;
     }
-    
-.card p.textA {
+form{
+    background-color: var(--color3);
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+}
+label{
+    background-color: var(--color3);
+    text-align: center;
+}
+input{
+    background-color: var(--color3);
+    margin: 8px;
+    text-align: center;
+    border-radius: 25px;
+    padding: 6px;
+    width: 260px;
+    box-shadow: var(--color1)(0, 0, 0, 0.25) 5px 20px 55px;
+}
+.textF{
     text-align: center;
     background: none;
     color: var(--color1);
-    background-color: #E8DBF2;
+    background-color:  var(--color3);
     font-family: "Bebas Neue", sans-serif;
-    font-size: 30px;
+    font-size: 50px;
     padding: 6px;
     border-radius: 25px;
     box-shadow: var(--color1)(0, 0, 0, 0.25) 5px 20px 55px;
     margin: 5px; 
 }
-    
-.card img {
-    color: var(--color2);
-    background: none;
-    width: 50px; 
-    height: auto;
-    margin-top: 10px; 
+button{
+    background-color: var(--color5 );
+    border-radius: 25px;
+    padding: 6px;
+    width: 240px;
+    font-size: 18px;
+    color: var(--negro);
+    margin: 5px;
+
 }
 /**************************************************/
 /* footer */
+
 footer p{
     text-align: center;
     margin: 10px;

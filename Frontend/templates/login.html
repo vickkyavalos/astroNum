@@ -9,23 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <!-------------------------------------------------->
-    <link rel="stylesheet" href="./../static/styles/home.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="./../static/styles/login.css">
+    <title>Login</title>
 </head>
 <body>
     <header>
-         <!-- logo -->
+        <!-- logo -->
         <div id="logo-container">
             <img id="logo" src="../static/img/logoASTRONUM.png" alt=""> 
         </div>
         <h1>AstroNum</h1>
         <!-- <img src="/static/img/icons/person-fill.svg" alt=""> -->
+        
         <!-- barra de navegación -->
         <div class="navbar">
             <ul>
                 <li><a href="./home.html">Inicio</a></li>
                 <li><a href="./astrologia.html">Astrología</a></li>
-                <li><a href="">Numerología</a></li>
+                <li><a href="./numerologia.html">Numerología</a></li>
                 <li><a href="">Recursos</a></li>
                 <li><a href="">Contacto</a></li>
                 <li><a href="">Ayuda</a></li>
@@ -33,36 +34,25 @@
         </div>
     </header>
     <br>
-    <!-- contenido -->
-     <section>
-        <h2>Bienvenido a AstroNum</h2>
-        <p id='texto'>Descubre el fascinante mundo de la astrología y la numerología con una experiencia personalizada y completa. En AstroNum, nos dedicamos a conectar a los usuarios con el conocimiento profundo de los astros y los números que guían su vida.</p>
-        <br>
-        <h2>¿Qué encontrarás en AstroNum?</h2>
-        <ul>
-            <li>Astrología en detalle</li>
-            <li>Calculadora de Numerología</li>
-            <li>Perfil personalizado</li>
-        </ul>
-     </section>
 
-    <!-- cards -->
+    <!-- formulario -->
     <main>
-        <div class="card">
-            <p class="textA">Reporte Astrológico</p>
+       <div class="card">
+        <p class="textF">Iniciar Sesión</p>
+        <p class="aa">Bienvenido de nuevo</p>
             <br>
-            <img src="./../static/img/icons/caret-down.svg" alt="">
-        </div>
-        <div class="card">
-            <p class="textA">Reporte Numerológico</p>
-            <br>
-            <img src="./../static/img/icons/caret-down.svg" alt="">
-        </div>
-        <div class="card">
-            <p class="textA">Numerología y Amor</p>
-            <br>
-            <img src="./../static/img/icons/caret-down.svg" alt="">
-        </div>
+            <form>
+                <label for="fname">Nombre/s: </label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <!------------------------------------------->
+                <label for="apellido">Apellido/s: </label><br>
+                <input type="text" id="apellido" name="apellido"><br>
+                <!------------------------------------------->
+                <button>Ingresar</button>
+              </form>
+                <a href="" class="aa">¿Olvidaste tu contraseña?</a>
+              <br>
+              <p class="aa">¿No tienes una cuenta? <a class="aa" href="./registro.html">REGISTRATE</a></p>
     </main>
 
     <footer>
