@@ -14,12 +14,11 @@
 </head>
 <body>
     <header>
-         <!-- logo -->
+        <!-- logo -->
         <div id="logo-container">
             <img id="logo" src="../static/img/logoASTRONUM.png" alt=""> 
         </div>
         <h1>AstroNum</h1>
-        <!-- <img src="/static/img/icons/person-fill.svg" alt=""> -->
         <!-- barra de navegación -->
         <div class="navbar">
             <ul>
@@ -27,42 +26,55 @@
                 <li><a href="./astrologia.html">Astrología</a></li>
                 <li><a href="./numerologia.html">Numerología</a></li>
                 <li><a href="./recursos.html">Recursos</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Ayuda</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./ayuda.html">Ayuda</a></li>
             </ul>
+        </div>
+        <!-- Contenedor para el icono -->
+        <div id="icon-container">
+            <a id="loginl" href="../templates/login.html"><img id="icon" src="../static/img/icons/person-fill.svg" alt="Icono"></a>
         </div>
     </header>
     <br>
     <!-- contenido -->
      <section>
-        <h2>Bienvenido a AstroNum</h2>
-        <p id='texto'>Descubre el fascinante mundo de la astrología y la numerología con una experiencia personalizada y completa. En AstroNum, nos dedicamos a conectar a los usuarios con el conocimiento profundo de los astros y los números que guían su vida.</p>
-        <br>
-        <h2>¿Qué encontrarás en AstroNum?</h2>
+        
+        <div class="texto">
+        <p id='texto'>¡Bienvenido a nuestra sección de recursos astrológicos! Aquí encontrarás una colección cuidadosamente seleccionada de herramientas y contenidos que te ayudarán a profundizar en tu conexión con el universo. Desde material descargable hasta curiosidades cósmicas, este espacio está diseñado para quienes desean explorar el fascinante mundo de la astrología.</p>
+        <br> 
+    </div>
         <ul>
-            <li>Astrología en detalle</li>
-            <li>Calculadora de Numerología</li>
-            <li>Perfil personalizado</li>
+            <li>PDFs para Descargar</li>
+            <li>Datos Random Cósmicos</li>
+            <li>Herramientas y Extras</li>
         </ul>
+       
      </section>
 
     <!-- cards -->
     <main>
+        <div class="container">
         <div class="card">
-            <p class="textA">Reporte Astrológico</p>
-            <br>
-            <img src="./../static/img/icons/caret-down.svg" alt="">
+            <button class="botones">Numerología</button>
         </div>
         <div class="card">
-            <p class="textA">Reporte Numerológico</p>
-            <br>
-            <img src="./../static/img/icons/caret-down.svg" alt="">
+            <button class="botones" >Astrología</button>
         </div>
         <div class="card">
-            <p class="textA">Numerología y Amor</p>
-            <br>
-            <img src="./../static/img/icons/caret-down.svg" alt="">
+            <button class="botones">Protección</button>
         </div>
+        </div>
+        <div class="container">
+        <div class="card">
+            <button class="botones">Shadow Work</button>
+        </div>
+        <div class="card">
+            <button class="botones">Cristales</button>
+        </div>
+        <div class="card">
+            <button class="botones">Planetas</button>
+        </div>
+    </div>
     </main>
 
     <footer>

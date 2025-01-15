@@ -37,50 +37,77 @@ h2{
     text-align: center;
     padding: 5px;
 }
-header{
-    background-color: var(--color2);
-    height: 22vh;
-    margin: auto;
-}
-#logo-container{
+header {
     display: flex;
-    justify-content: center; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color2);
+    padding: 10px;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
     background: none;
-    margin: auto;
+    margin: 10px;
 }
-#logo{
-    width: 80px; 
+
+#logo {
+    width: 80px;
     height: auto;
     margin-top: 10px;
     background: none;
 }
-/**************************************************/
-/* barra de navegación */
-.navbar{
-    align-items:center;
-    justify-items: center;
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: none;
+    flex-grow: 1; /* Permite que la barra de navegación ocupe el espacio disponible */
 }
-.navbar ul{
+
+.navbar ul {
     list-style-type: none;
     display: flex;
     margin: 0;
     padding: 0;
-    background:none;
+    background: none;
 }
+
 .navbar ul li {
-    margin-right: 25px; 
-    background:none;
+    margin-right: 25px;
+    background: none;
     margin-top: 10px;
 }
+
 .navbar ul li a {
-    text-decoration: none; 
-    color: var(--negro); 
+    text-decoration: none;
+    color: var(--negro);
     text-decoration-style: solid;
-    background:none;
+    background: none;
     font-weight: 550;
     font-size: 18px;
+}
+
+#icon-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: none;
+    margin-left: auto; /* Empuja el contenedor del icono al extremo derecho */
+}
+
+#icon {
+    width: 40px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-left: 10px;
+    background-color: var(--color2);
+}
+#loginl{
+    background-color: var(--color2);
+    margin-right: 10px;
 }
 /**************************************************/
 /* section */
@@ -129,9 +156,10 @@ main{
     opacity: 0.9;
     }
     
-.card p.textA {
+.card .boton_principal{
     text-align: center;
     background: none;
+    align-self: center;
     color: var(--color1);
     background-color: #E8DBF2;
     font-family: "Bebas Neue", sans-serif;
@@ -139,9 +167,10 @@ main{
     padding: 6px;
     border-radius: 25px;
     box-shadow: var(--color1)(0, 0, 0, 0.25) 5px 20px 55px;
-    margin: 5px; 
+    margin: 5px;
+    overscroll-behavior-inline: auto;
 }
-    
+
 .card img {
     color: var(--color2);
     background: none;
@@ -149,6 +178,7 @@ main{
     height: auto;
     margin-top: 10px; 
 }
+
 /**************************************************/
 /* footer */
 footer p{

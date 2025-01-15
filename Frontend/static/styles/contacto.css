@@ -112,21 +112,38 @@ header {
 }
 /***************************************************/
 /* formulario */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
 main{
     display: flex;
     flex-wrap: wrap; 
     justify-content: center; 
     align-items: center; 
     padding: 10px;
-    margin: 5px;
+    flex: 1;
+}
+.container{
+    display: flex;
 }
 .aa{
     background-color: var(--color3);
     text-decoration-style: solid;
 }
+.texto-info{
+    width: 500px;
+    text-align: center;
+    margin-bottom: 180px;
+    margin-top: 180px;
+    font-size: 18px;
+}
 .card {
     width: 360px;
-    height: 550px;
+    height: 450px;
     margin: 25px;
     background-color: var(--color3);
     background-size: cover;
@@ -160,6 +177,15 @@ input{
     padding: 6px;
     width: 260px;
     box-shadow: var(--color1)(0, 0, 0, 0.25) 5px 20px 55px;
+
+}
+input.consul {
+    height: 40px; 
+    font-size: 16px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-bottom: 10px;
+    border-radius: 25px;
 }
 .textF{
     text-align: center;
@@ -171,6 +197,7 @@ input{
     padding: 6px;
     border-radius: 25px;
     box-shadow: var(--color1)(0, 0, 0, 0.25) 5px 20px 55px;
+    margin: 5px; 
 }
 button{
     background-color: var(--color5 );
@@ -204,6 +231,7 @@ footer{
     align-items: center;
     justify-content: flex-end;
     height: 15vh;
+    flex-shrink: 0;
 }
 #img-redes{
     display: inline-block;

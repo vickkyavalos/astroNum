@@ -1,0 +1,214 @@
+:root{
+    --fondo: #494959;
+    --color1: #867395;
+    --color2: #CEB7E0;
+    --color3: #E8DBF2;
+    --color4: #FDEFF2;
+    --color5: #EBF0FC;
+    --gris: #918C97;
+    --grisOscuro: #2C2C2E;
+    --negro: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/**************************************************/
+*{
+    background-color: var(--color1);
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    background-color: var(--color2);
+    margin: auto;
+    padding: 15px;
+    color: var(--color1);
+    letter-spacing: 5px;
+}
+h2{
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+}
+#texto{
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 5px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color2);
+    padding: 10px;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    margin: 10px;
+}
+
+#logo {
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+    background: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    flex-grow: 1; /* Permite que la barra de navegación ocupe el espacio disponible */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+.navbar ul li {
+    margin-right: 25px;
+    background: none;
+    margin-top: 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--negro);
+    text-decoration-style: solid;
+    background: none;
+    font-weight: 550;
+    font-size: 18px;
+}
+
+#icon-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: none;
+    margin-left: auto; /* Empuja el contenedor del icono al extremo derecho */
+}
+
+#icon {
+    width: 40px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-left: 10px;
+    background-color: var(--color2);
+}
+#loginl{
+    background-color: var(--color2);
+    margin-right: 10px;
+}
+/**************************************************/
+/* section */
+section{
+    align-items:center;
+    justify-items: center; 
+    padding: 8px;
+}
+section p{
+    text-align:justify;  
+    margin: 10px;
+}
+section ul li{
+    margin: 10px;
+    font-size: 18px;
+    display: flex;
+}
+.texto{
+    margin: 40px;
+    align-items:center;
+    justify-items: center; 
+    padding: 8px;
+}
+
+/**************************************************/
+/* cards */
+
+main{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px;
+    margin: 15px;
+}
+.container{
+    display: flex;
+}
+.card {
+    width: 350px;
+    height: 250px;
+    margin: 25px;
+    background-color: var(--color3);
+    background-image: url("../img/zodiac1.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 55px;
+    transition: box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+    opacity: 0.9;
+    }
+    
+button{
+    text-align: center;
+    background: none;
+    color: var(--color1);
+    background-color: #E8DBF2;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    padding: 6px;
+    border-radius: 25px;
+    box-shadow: var(--color1)(0, 0, 0, 0.25) 5px 20px 55px;
+    margin: 5px; 
+}
+    
+.card img {
+    color: var(--color2);
+    background: none;
+    width: 50px; 
+    height: auto;
+    margin-top: 10px; 
+}
+/**************************************************/
+/* footer */
+footer p{
+    text-align: center;
+    margin: 10px;
+    background:none;
+}
+.iconos{
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    background:none;
+}
+footer{
+    text-align: center;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 15vh;
+}
+#img-redes{
+    display: inline-block;
+    margin: 10px auto;
+    background:none;
+}
