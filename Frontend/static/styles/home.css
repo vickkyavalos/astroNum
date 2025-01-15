@@ -156,8 +156,7 @@ main{
     opacity: 0.9;
     }
     
-.card .boton_principal{
-    text-align: center;
+#btn1, #btn2 ,#btn3{text-align: center;
     background: none;
     align-self: center;
     color: var(--color1);
@@ -168,8 +167,7 @@ main{
     border-radius: 25px;
     box-shadow: var(--color1)(0, 0, 0, 0.25) 5px 20px 55px;
     margin: 5px;
-    overscroll-behavior-inline: auto;
-}
+    overscroll-behavior-inline: auto;}    
 
 .card img {
     color: var(--color2);
