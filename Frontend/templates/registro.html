@@ -37,33 +37,36 @@
     </header>
     <br>
 
-    <!-- formulario -->
-    <main>
-       <div class="card">
-        <p class="textF">Registro</p>
-            <br>
-            <form id="formulario">
-                <label for="fname">Nombre/s:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-
-                <!------------------------------------------->
-                <label for="apellido">Apellido/s:</label><br>
-                <input type="text" id="apellido" name="apellido"><br>
-
-                <!------------------------------------------->
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-
-                <!------------------------------------------->
-                <label for="contrasena">Contraseña:</label><br>
-                <input type="password" id="contrasena" name="contrasena"><br>
-
-                <!------------------------------------------->
-                <label for="repite_cont">Repite la contraseña:</label><br>
-                <input type="password" id="repite_cont" name="repite_cont"><br>
-                <button>Registrar</button>
-              </form>
-    </main>
+<!-- formulario -->
+<main>
+    <div class="card">
+     <p class="textF">Registro</p>
+         <br>
+         <form id="formulario">
+             <label for="nombre">Nombre/s:</label><br>
+             <input type="text" id="nombre" name="nombre" placeholder="Juan" minlength="3" maxlength="20" required><br>
+             <p id="mensajeErrorUser" style="color: red;"></p>
+ 
+             <!------------------------------------------->
+             <label for="apellido">Apellido/s:</label><br>
+             <input type="text" id="apellido" name="apellido" placeholder="Perez" minlength="3" maxlength="20" required><br>
+             <p id="mensajeErrorApellido" style="color: red;"></p>
+             <!------------------------------------------->
+             <label for="email">Email:</label><br>
+             <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required><br>
+             <p id="mensajeErrorEmail" style="color: red;"></p>
+             <!------------------------------------------->
+             <label for="contrasena">Contraseña:</label><br>
+             <input type="password" id="contrasena" name="contrasena" placeholder="*******" minlength="4" maxlength="12" required><br>
+             <p id="mensajeErrorPassword" style="color: red;"></p>
+             <!------------------------------------------->
+             <label for="contrasena2">Repite la contraseña:</label><br>
+             <input type="password" id="contrasena2" name="contrasena2" placeholder="*******" minlength="4" maxlength="12" required><br>
+             <p id="mensajeErrorPassword2" style="color: red;"></p>
+ 
+             <button>Registrar</button>
+           </form>
+ </main>
 
     <footer>
         <p>© 2024 AstroNum. Todos los derechos reservados.</p>
@@ -73,6 +76,6 @@
             <img class="iconos" src="./../static/img/icons/twitter-x.svg" alt="iconos">
         </div>
     </footer>
-    
+    <script src="./../static/js/registro.js"></script>
 </body>
 </html>

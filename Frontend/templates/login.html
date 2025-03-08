@@ -45,20 +45,20 @@
             <br>
             <form id="formulario">
                 <label for="usuario">Email:</label><br>
-                <input type="email" id="usuario" name="usuario" placeholder="Ingrese su Email"><br>
+                <input type="email" id="usuario" name="usuario" placeholder="ejemplo@correo.com" required><br>
                 <p id="mensajeErrorEmail" style="color: red;"></p>
 
                 <label for="contrasena">Contraseña:</label><br>
-                <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su Contraseña"><br>
-                <p id="mensajeErrorContrasena" style="color: red;"></p>
-                <button id="ingresar" type="submit">Ingresar</button>
+                <input type="password" id="contrasena" name="contrasena" placeholder="*******" minlength="4" maxlength="12" required><br>
+                <p id="mensajeErrorPassword" style="color: red;"></p>
+                <button id="ingresar" type="submit" onclick="irAMenu">Ingresar</button>
 
               </form>
                 <a href="" class="aa">¿Olvidaste tu contraseña?</a>
               <br>
               <p class="aa">¿No tienes una cuenta? <a class="aa" href="./registro.html">REGISTRATE</a></p>
     </main>
-
+    <!-- footer -->
     <footer>
         <p>© 2024 AstroNum. Todos los derechos reservados.</p>
         <div id="img-redes">
