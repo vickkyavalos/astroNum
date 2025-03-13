@@ -41,25 +41,34 @@
     <main>
         <div class="container">
        <div class="card">
-        <form action=""></form>
+        <form id="formulario">
             <p class="textF">Carta Natal</p>
             <br>
             <form>
-                <label for="fname">Nombre/s: </label><br>
-                <input type="text" id="fname" name="fname"><br>
+                <label for="nombre">Nombre/s:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Juan" minlength="3" maxlength="20" required><br>
+                <p id="mensajeErrorUser" style="color: red;"></p>
+
                 <!------------------------------------------->
-                <label for="apellido">Apellido/s: </label><br>
-                <input type="text" id="apellido" name="apellido"><br>
+                <label for="apellido">Apellido/s:</label><br>
+                <input type="text" id="apellido" name="apellido" placeholder="Perez" minlength="3" maxlength="20" required><br>
+                <p id="mensajeErrorApellido" style="color: red;"></p>
+
                 <!------------------------------------------->
-                <label for="Fecha">Fecha de nacimiento: </label><br>
+                <label for="fecha">Fecha de nacimiento: </label><br>
                 <input type="date" name="fecha" id="fecha"><br>
+                <p id="mensajeErrorFecha" style="color: red;"></p>
+
                 <!------------------------------------------->
                 <label for="hora">Hora de nacimiento</label><br>
-                <input type="datetime" name="hora" id="hora">
+                <input type="time" name="hora" id="hora">
+                <p id="mensajeErrorHora" style="color: red;"></p>
+
                 <!------------------------------------------->
                 <button>Calcular</button>
 
               </form>
+        </form>
         </div>
         <div class="texto-info">
             <p>La carta natal es una representación gráfica del cielo en el momento exacto de tu nacimiento. Sirve como una herramienta para explorar aspectos de tu personalidad, tus talentos, desafíos y el propósito de tu vida. Al interpretar la posición de los planetas, signos zodiacales y casas astrológicas, se pueden obtener pistas sobre tus emociones, relaciones, carrera y crecimiento personal. Es un mapa simbólico que ayuda a conocerte mejor y a tomar decisiones más alineadas con tu esencia.</p>
@@ -75,6 +84,6 @@
             <img class="iconos" src="./../static/img/icons/twitter-x.svg" alt="iconos">
         </div>
     </footer>
-    
+    <script src="../static/js/astrologia.js"></script>
 </body>
 </html>
