@@ -44,17 +44,23 @@
         <form action=""></form>
             <p class="textF">Calculadora Numerologíca</p>
             <br>
-            <form>
-                <label for="fname">Nombre/s: </label><br>
-                <input type="text" id="fname" name="fname"><br>
+            <form id="formulario">
+                <label for="nombre">Nombre/s:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Juan" minlength="3" maxlength="20" required><br>
+                <p id="mensajeErrorUser" style="color: red;"></p>
+
                 <!------------------------------------------->
-                <label for="apellido">Apellido/s: </label><br>
-                <input type="text" id="apellido" name="apellido"><br>
+                <label for="apellido">Apellido/s:</label><br>
+                <input type="text" id="apellido" name="apellido" placeholder="Perez" minlength="3" maxlength="20" required><br>
+                <p id="mensajeErrorApellido" style="color: red;"></p>
+                 <!------------------------------------------->
+                
+                 <label for="fecha">Fecha de nacimiento: </label><br>
+                 <input type="date" name="fecha" id="fecha"><br>
+                 <p id="mensajeErrorFecha" style="color: red;"></p>
+
                 <!------------------------------------------->
-                <label for="Fecha">Fecha de nacimiento: </label><br>
-                <input type="date" name="fecha" id="fecha"><br>
-                <!------------------------------------------->
-                <button>Calcular</button>
+                <button type="submit">Calcular</button>
 
               </form>
         </div>
@@ -84,6 +90,6 @@
             <img class="iconos" src="./../static/img/icons/twitter-x.svg" alt="iconos">
         </div>
     </footer>
-    
+    <script src="../static/js/numerología.js"></script>
 </body>
 </html>
