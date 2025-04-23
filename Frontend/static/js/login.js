@@ -33,12 +33,6 @@ const validatePassword = (e) =>{
     }
 }
 
-//****************************************************************************************************************************/
-// function irAMenu(){
-//     aca va despues lo de enviar la informacion al back para validar y dejar el la sesión iniciada
-//     buttonIngresar = window.location.href = './../templates/index.html'
-// }
-
 
 //****************************************************************************************************************************/
 //añade eventos para cada input
@@ -53,7 +47,11 @@ formulario.addEventListener('submit', (e) => {
     e.preventDefault()
 });
 
-
+//****************************************************************************************************************************/
+// function irAMenu(){
+//     aca va despues lo de enviar la informacion al back para validar y dejar el la sesión iniciada
+//     buttonIngresar = window.location.href = './../templates/index.html'
+// }
 
 
 
